@@ -1,0 +1,100 @@
+/* base style */
+
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+div#container {
+    position: relative;
+    width: 5px;
+    height: 5px;
+}
+
+p {
+    border: 1px solid black;
+    background-color: #A52A2A;
+    width: 90%;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Helvetica;
+    color: white;
+}
+
+#p1 {
+    background-color: blue;
+    position: relative;
+    bottom: 0;
+    left: 0;
+}
+
+.row {
+    width: 100%;
+}
+
+
+/* Desktop view */
+
+@media (min-width: 992px) {
+    .col-lg-1,
+    .col-lg-2,
+    .col-lg-3 {
+        float: left;
+        border: 1px solid black;
+    }
+    .col-lg-1 {
+        width: 33.33%
+    }
+    .col-lg-2 {
+        width: 33.33%
+    }
+    .col-lg-3 {
+        width: 33.33%
+    }
+}
+
+
+/*tablet view*/
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .col-md-1,
+    .col-md-2,
+    .col-md-3 {
+        border: 1px solid black;
+    }
+    .col-md-1 {
+        width: 30%;
+    }
+    .col-md-2 {
+        width: 30%
+    }
+    .col-md-3 {
+        width: 30%
+    }
+}
+
+
+/* mobile view*/
+
+@media (max-width: 767px) {
+    .col-sm-1,
+    .col-sm-2,
+    .col-sm-3 {
+        float: left;
+        border: 1px solid black;
+    }
+    .col-sm-1 {
+        width: 100%
+    }
+    .col-sm-2 {
+        width: 100%
+    }
+    .col-sm-3 {
+        width: 100%
+    }
+}
